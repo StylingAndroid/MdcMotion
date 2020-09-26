@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomNavBar Shape</string>
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="world">World</string>
+    <string name="profile">Profile</string>
+</resources>
