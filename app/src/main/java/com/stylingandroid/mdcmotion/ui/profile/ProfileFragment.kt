@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.google.android.material.transition.MaterialFadeThrough
 import com.stylingandroid.bottomnavbarshape.databinding.FragmentProfileBinding
 import com.stylingandroid.mdcmotion.ui.home.ProfileViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -13,13 +14,16 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = ProfileFragment()
-    }
-
     private val viewModel: ProfileViewModel by viewModels()
 
     private lateinit var binding: FragmentProfileBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        enterTransition = MaterialFadeThrough()
+        exitTransition = MaterialFadeThrough()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
