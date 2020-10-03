@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MDC Motion</string>
+    <string name="appear">Appear</string>
+    <string name="container">Container</string>
+    <string name="axis">Axis</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="x_axis">X-Axis</string>
+    <string name="y_axis">Y-Axis</string>
+    <string name="z_axis">Z-Axis</string>
+</resources>

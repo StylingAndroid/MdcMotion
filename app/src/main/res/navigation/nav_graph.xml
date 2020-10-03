@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appearFragment">
+
+    <fragment
+        android:id="@+id/appearFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.AppearFragment"
+        android:label="@string/appear"
+        tools:layout="@layout/fragment_appear" />
+
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.ContainerFragment"
+        android:label="@string/container"
+        tools:layout="@layout/fragment_container" />
+
+    <fragment
+        android:id="@+id/axisFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.AxisFragment"
+        android:label="@string/axis"
+        tools:layout="@layout/fragment_axis" />
+</navigation>
