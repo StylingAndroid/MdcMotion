@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.stylingandroid.bottomnavbarshape.R
-import com.stylingandroid.bottomnavbarshape.databinding.ActivityMainBinding
+import com.stylingandroid.mdcmotion.R
+import com.stylingandroid.mdcmotion.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

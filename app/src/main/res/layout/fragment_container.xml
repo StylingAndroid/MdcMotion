@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.stylingandroid.mdcmotion.ui.home.HomeFragment">
+    tools:context="com.stylingandroid.mdcmotion.ui.container.ContainerFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/home" />
+        android:text="@string/container" />
 
 </FrameLayout>

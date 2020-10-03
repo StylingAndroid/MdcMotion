@@ -2,22 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home"
-        android:title="@string/home" />
+        android:id="@+id/appearFragment"
+        android:icon="@drawable/ic_appear"
+        android:title="@string/appear" />
 
     <item
-        android:id="@+id/infoFragment"
-        android:icon="@drawable/ic_info"
-        android:title="@string/info" />
+        android:id="@+id/containerFragment"
+        android:icon="@drawable/ic_container"
+        android:title="@string/container" />
 
     <item
-        android:id="@+id/worldFragment"
-        android:icon="@drawable/ic_language"
-        android:title="@string/world" />
-
-    <item
-        android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_person"
-        android:title="@string/profile" />
+        android:id="@+id/axisFragment"
+        android:icon="@drawable/ic_axis"
+        android:title="@string/axis" />
 </menu>

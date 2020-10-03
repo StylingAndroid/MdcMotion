@@ -3,29 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/appearFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/appearFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.appear.AppearFragment"
+        android:label="fragment_appear"
+        tools:layout="@layout/fragment_appear" />
 
     <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.info.InfoFragment"
+        android:id="@+id/containerFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.container.ContainerFragment"
         android:label="InfoFragment"
-        tools:layout="@layout/fragment_info" />
+        tools:layout="@layout/fragment_container" />
 
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.profile.ProfileFragment"
-        android:label="ProfileFragment"
-        tools:layout="@layout/fragment_profile" />
-
-    <fragment
-        android:id="@+id/worldFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.world.WorldFragment"
+        android:id="@+id/axisFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.axis.AxisFragment"
         android:label="WorldFragment"
-        tools:layout="@layout/fragment_world" />
+        tools:layout="@layout/fragment_axis" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.stylingandroid.mdcmotion.ui.profile
+package com.stylingandroid.mdcmotion.ui.container
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,16 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.google.android.material.transition.MaterialFadeThrough
-import com.stylingandroid.bottomnavbarshape.databinding.FragmentProfileBinding
-import com.stylingandroid.mdcmotion.ui.home.ProfileViewModel
+import com.stylingandroid.mdcmotion.databinding.FragmentContainerBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ProfileFragment : Fragment() {
+class ContainerFragment : Fragment() {
 
-    private val viewModel: ProfileViewModel by viewModels()
+    private val viewModel: ContainerViewModel by viewModels()
 
-    private lateinit var binding: FragmentProfileBinding
+    private lateinit var binding: FragmentContainerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +29,7 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        binding = FragmentContainerBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

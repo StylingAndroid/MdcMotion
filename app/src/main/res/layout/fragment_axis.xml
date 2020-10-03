@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.stylingandroid.mdcmotion.ui.world.WorldFragment">
+    tools:context="com.stylingandroid.mdcmotion.ui.axis.AxisFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/world" />
+        android:text="@string/axis" />
 
 </FrameLayout>
