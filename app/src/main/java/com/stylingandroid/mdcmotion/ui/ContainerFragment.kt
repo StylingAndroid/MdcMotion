@@ -1,21 +1,18 @@
-package com.stylingandroid.mdcmotion.ui.appear
+package com.stylingandroid.mdcmotion.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import com.google.android.material.transition.MaterialFadeThrough
-import com.stylingandroid.mdcmotion.databinding.FragmentAppearBinding
+import com.stylingandroid.mdcmotion.databinding.FragmentContainerBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class AppearFragment : Fragment() {
+class ContainerFragment : Fragment() {
 
-    private val viewModel: AppearViewModel by viewModels()
-
-    private lateinit var binding: FragmentAppearBinding
+    private lateinit var binding: FragmentContainerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +26,7 @@ class AppearFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAppearBinding.inflate(inflater, container, false)
+        binding = FragmentContainerBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

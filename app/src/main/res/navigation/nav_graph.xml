@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/appearFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.appear.AppearFragment"
-        android:label="fragment_appear"
+        android:name="com.stylingandroid.mdcmotion.ui.AppearFragment"
+        android:label="@string/appear"
         tools:layout="@layout/fragment_appear" />
 
     <fragment
         android:id="@+id/containerFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.container.ContainerFragment"
-        android:label="InfoFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.ContainerFragment"
+        android:label="@string/container"
         tools:layout="@layout/fragment_container" />
 
     <fragment
         android:id="@+id/axisFragment"
-        android:name="com.stylingandroid.mdcmotion.ui.axis.AxisFragment"
-        android:label="WorldFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.AxisFragment"
+        android:label="@string/axis"
         tools:layout="@layout/fragment_axis" />
 </navigation>
