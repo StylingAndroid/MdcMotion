@@ -15,11 +15,53 @@
         android:id="@+id/containerFragment"
         android:name="com.stylingandroid.mdcmotion.ui.ContainerFragment"
         android:label="@string/container"
-        tools:layout="@layout/fragment_container" />
+        tools:layout="@layout/fragment_container">
+        <action
+            android:id="@+id/action_containerFragment_to_contentFragment"
+            app:destination="@id/contentFragment">
+            <argument
+                android:name="title"
+                android:defaultValue="Title"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_containerFragment_to_contentItemFragment"
+            app:destination="@id/contentItemFragment">
+            <argument
+                android:name="title"
+                android:defaultValue="Title"
+                app:argType="string" />
+            <argument
+                android:name="index"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/axisFragment"
         android:name="com.stylingandroid.mdcmotion.ui.AxisFragment"
         android:label="@string/axis"
         tools:layout="@layout/fragment_axis" />
+
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.ContentFragment"
+        android:label="ContentFragment">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contentItemFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.ContentItemFragment"
+        android:label="ContentItemFragment">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
 </navigation>

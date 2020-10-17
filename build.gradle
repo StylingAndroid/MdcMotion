@@ -1,32 +1,32 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext {
-        kotlin_version = '1.4.10'
-    }
     repositories {
         google()
         jcenter()
+        gradlePluginPortal()
     }
     dependencies {
         classpath BuildPlugins.androidGradlePlugin
         classpath BuildPlugins.kotlinGradlePlugin
         classpath BuildPlugins.hiltAndroidPlugin
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath BuildPlugins.navigationSafeArgs
+
+        classpath BuildPlugins.versionsPlugin
+        classpath BuildPlugins.detektPlugin
+        classpath BuildPlugins.ktlintPlugin
+        classpath BuildPlugins.canidropjetifierPlugin
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
-plugins {
-    id 'com.github.ben-manes.versions' version '0.33.0'
-    id 'io.gitlab.arturbosch.detekt' version "1.14.1"
-    id 'org.jlleitschuh.gradle.ktlint' version '9.4.0'
-    id "com.github.plnice.canidropjetifier" version "0.5"
-}
-
 subprojects {
+    repositories {
+        google()
+        jcenter()
+    }
     apply plugin: BuildPlugins.versions
     apply plugin: BuildPlugins.ktlint
     apply plugin: BuildPlugins.detekt

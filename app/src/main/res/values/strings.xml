@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MDC Motion</string>
     <string name="appear">Appear</string>
     <string name="container">Container</string>
@@ -8,4 +8,21 @@
     <string name="x_axis">X-Axis</string>
     <string name="y_axis">Y-Axis</string>
     <string name="z_axis">Z-Axis</string>
+
+    <string name="lorem_ipsum" tools:ignore="Typos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at placerat diam, vel posuere ex. Vestibulum euismod dictum odio. Vivamus sodales massa efficitur, ultrices felis at, accumsan erat. Aliquam hendrerit blandit quam, nec feugiat nunc congue id. Nulla maximus lobortis nibh ac aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis in imperdiet tellus. Integer id sem sit amet risus viverra lobortis in ut ex. Nunc at interdum mauris.\n\nVestibulum erat nisi, suscipit et ante non, venenatis semper tellus. Vestibulum varius ipsum pretium massa posuere, ut suscipit tortor sodales. Praesent orci velit, varius ut lorem eu, gravida gravida eros. Donec non mi felis. Mauris ut venenatis diam, vel cursus mi. Praesent id posuere sem, sed feugiat risus. Donec vestibulum ullamcorper ante ac venenatis. Ut dolor dolor, vestibulum ut elementum in, bibendum non nisi. Ut viverra orci eget velit viverra, quis accumsan magna porttitor. Sed fermentum ligula ut risus luctus ultricies.\n\nAliquam eu purus at elit faucibus imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In nec nisi tristique, pharetra libero et, vehicula nibh. Quisque venenatis quam id ante blandit, quis rutrum risus fringilla. Pellentesque id auctor eros. Vestibulum sit amet mi blandit, commodo dui non, lobortis nibh. Fusce lobortis iaculis sodales. Sed a augue sed mauris rutrum tincidunt. Proin nec erat ex. Sed dignissim purus sed aliquet commodo.\n\nSed pulvinar odio arcu, eu vehicula nibh aliquet ac. Vestibulum diam libero, mollis ut sollicitudin a, porttitor sit amet lacus. In hac habitasse platea dictumst. Praesent pulvinar lorem ac pellentesque viverra. Donec elementum mi vel arcu bibendum volutpat. Suspendisse eget accumsan ante, eget dignissim ligula. Proin facilisis sed tortor non dignissim. Praesent nunc felis, lobortis et nisl vitae, pulvinar eleifend urna. Nullam dictum scelerisque condimentum.\n\nQuisque rhoncus dictum odio, sed accumsan ligula fringilla in. Nam laoreet sapien et ante tincidunt, et sodales odio finibus. Sed luctus placerat massa quis mollis. In hac habitasse platea dictumst. Proin suscipit luctus aliquam. Proin lorem sem, cursus vel nisi semper, finibus sollicitudin nunc. Mauris pulvinar, ex eu porta lacinia, tellus mauris malesuada libero, sit amet ullamcorper lorem nibh nec libero. Proin sit amet eros eleifend, posuere lorem laoreet, lobortis dolor. Fusce blandit metus neque, ultrices sodales velit luctus at. Sed sem tellus, fermentum ac consequat sit amet, porta consectetur nisl. Fusce vestibulum nisl ut mi imperdiet, eu vulputate magna ultricies.</string>
+
+    <string name="container_card">shared_elements_card</string>
+    <string name="shared_elements_text">shared_elements_text</string>
+    <string name="container_item_card">shared_elements_item_card_%d</string>
+    <string name="shared_elements_item_text">shared_elements_item_text_%d</string>
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+        <item>Item 7</item>
+        <item>Item 8</item>
+    </string-array>
 </resources>
