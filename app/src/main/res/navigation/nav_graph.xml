@@ -42,7 +42,20 @@
         android:id="@+id/axisFragment"
         android:name="com.stylingandroid.mdcmotion.ui.AxisFragment"
         android:label="@string/axis"
-        tools:layout="@layout/fragment_axis" />
+        tools:layout="@layout/fragment_axis">
+        <action
+            android:id="@+id/action_axisFragment_to_axisDestinationFragment"
+            app:destination="@id/axisDestinationFragment">
+            <argument
+                android:name="title"
+                android:defaultValue="Title"
+                app:argType="string" />
+            <argument
+                android:name="axis"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/contentFragment"
@@ -64,4 +77,19 @@
             android:name="index"
             app:argType="integer" />
     </fragment>
+
+
+    <fragment
+        android:id="@+id/axisDestinationFragment"
+        android:name="com.stylingandroid.mdcmotion.ui.AxisDestinationFragment"
+        android:label="AxisDestinationFragment">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="axis"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>
