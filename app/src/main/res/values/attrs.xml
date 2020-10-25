@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dottedBottomNavigationViewStyle" />
+    <declare-styleable name="DottedBottomNavigationView">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotPadding" format="dimension" />
+        <attr name="dotColour" format="color" />
+        <attr name="dotAnimationDuration" format="integer" />
+    </declare-styleable>
+</resources>

@@ -4,7 +4,7 @@ const val navigationVersion = "2.3.1"
 
 object BuildPlugins {
     object Version {
-        const val androidBuildToolsVersion = "4.2.0-alpha13"
+        const val androidBuildToolsVersion = "4.2.0-alpha14"
         const val versionsVersion = "0.33.0"
         const val detektVersion = "1.14.1"
         const val ktlintVersion = "9.4.0"

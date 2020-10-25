@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     tools:context="com.stylingandroid.mdcmotion.ui.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -19,10 +20,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.stylingandroid.mdcmotion.widget.ShapedBottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:dotAnimationDuration="@android:integer/config_shortAnimTime"
+        app:dotColour="?colorPrimary"
+        app:dotDiameter="6dp"
+        app:dotPadding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
